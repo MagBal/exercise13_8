@@ -16,7 +16,7 @@ server.on('request', function (request, response) {
         response.setHeader('Content-Type', 'image/jpg');
                 
         fs.readFile('./404.jpg', function(err, data){
-        	if(err) throw err; 
+            if(err) throw err; 
             response.write(data);
             response.end();
         });
